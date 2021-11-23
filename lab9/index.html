@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="http://localhost:8081/processForm" method="post" enctype="multipart/form-data">
+         Enter your name: <input type="text" id="txt_name" placeholder="name" name="name" /> <br> Describe yourself: <br> <textarea id="txt_description" placeholder="Description" style="width: 100%; height: 30%;"
+            name="description"></textarea> <br> Enter an image url: <input type="text" id="txt_imageurl" placeholder="Enter an image url" name="image" /> <br> Choose your gender:
+        <br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br> Choose your birthday: <input type="date" id="birthday" name="date" />
+        <br> Choose your favorite color: <input type="color" id="fav_color" name="color" /><br>
+        <input type="file" name="user_image"><br>
+        <input type="submit" id="submit" value="submit" name="submit" />
+
+    </form>
+
+</body>
+
+</html>
